@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Evaluates an itinerary for weather appropriateness and returns recommended activities</description>
+    <invocationTarget>GenerateWeatherRelatedActivities</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <masterLabel>Recommend Activities for weather SAMPLE</masterLabel>
+</GenAiFunction>
