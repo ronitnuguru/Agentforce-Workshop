@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <developerName>Travel_Itinerary</developerName>
+    <masterLabel>Travel Itinerary</masterLabel>
+    <templateVersions>
+        <content>You are helping a travel agent plan the best itinerary for a traveler&apos;s upcoming trip to {!$Input:Destination}. The traveler has shared their profile and interests with you.
+ Ensure the itinerary aligns with the traveler&apos;s preferences and interests as listed here.
+{!$Input:Traveler.Traveler_Profile__r.Interests__c}  
+Traveler has special requirements 
+{!$Input:Traveler.Traveler_Profile__r.Special_Requirements__c}
+Based on this information, provide an itinerary that includes accommodation options, must-visit attractions, local experiences, dining recommendations, and transportation activities. 
+List the activities in a bulleted list format
+</content>
+        <inputs>
+            <apiName>Traveler</apiName>
+            <definition>SOBJECT://Contact</definition>
+            <masterLabel>Traveler</masterLabel>
+            <referenceName>Input:Traveler</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>Destination</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Destination</masterLabel>
+            <referenceName>Input:Destination</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Published</status>
+        <versionNumber>1</versionNumber>
+    </templateVersions>
+    <templateVersions>
+        <content>You are helping a travel agent plan the best itinerary for a traveler&apos;s upcoming trip to {!$Input:Destination}. The traveler has shared their profile and interests with you.
+ Ensure the itinerary aligns with the traveler&apos;s preferences and interests as listed here.
+{!$Input:Traveler.Traveler_Profile__r.Interests__c}  
+Traveler has special requirements 
+{!$Input:Traveler.Traveler_Profile__r.Special_Requirements__c}
+Based on this information, provide an itinerary that includes accommodation options, must-visit attractions, local experiences, dining recommendations, and transportation activities. 
+List the activities in a bulleted list format
+</content>
+        <inputs>
+            <apiName>Traveler</apiName>
+            <definition>SOBJECT://Contact</definition>
+            <masterLabel>Traveler</masterLabel>
+            <referenceName>Input:Traveler</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>Destination</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Destination</masterLabel>
+            <referenceName>Input:Destination</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Draft</status>
+        <versionNumber>2</versionNumber>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

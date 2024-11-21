@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
-    <applicationVisibilities>
-        <application>Agentforce</application>
-        <visible>true</visible>
-    </applicationVisibilities>
     <classAccesses>
         <apexClass>ConditionalCheckController</apexClass>
         <enabled>true</enabled>
@@ -20,10 +16,11 @@
         <apexClass>SetupAssistantControllerTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Traveler_Profile__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Agentforce Workshop</label>
-    <tabSettings>
-        <tab>Setup_Assistant</tab>
-        <visibility>Visible</visibility>
-    </tabSettings>
 </PermissionSet>
