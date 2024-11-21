@@ -1,0 +1,27 @@
+{
+  "packageDirectories": [
+    {
+      "versionName": "ver 0.8",
+      "versionNumber": "0.8.0.NEXT",
+      "path": "force-app",
+      "default": true,
+      "package": "Agentforce Workshop",
+      "versionDescription": ""
+    }
+  ],
+  "name": "Agentforce Workshop",
+  "namespace": "pkgviz",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "62.0",
+  "packageAliases": {
+    "Agentforce Workshop": "0HoRh00000001DpKAI",
+    "Agentforce Workshop@0.1.0-1": "04tRh000000amm5IAA",
+    "Agentforce Workshop@0.2.0-1": "04tRh000000b9KTIAY",
+    "Agentforce Workshop@0.3.0-1": "04tRh000000bF4vIAE",
+    "Agentforce Workshop@0.4.0-1": "04tRh000000bFCzIAM",
+    "Agentforce Workshop@0.5.0-1": "04tRh000000bFEbIAM",
+    "Agentforce Workshop@0.6.0-1": "04tRh000000bFGDIA2",
+    "Agentforce Workshop@0.7.0-1": "04tRh000000bQErIAM",
+    "Agentforce Workshop@0.8.0-1": "04tRh000000bQGTIA2"
+  }
+}
